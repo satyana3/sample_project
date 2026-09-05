@@ -5,8 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                sh 'echo "Hello Jenkins"'
-                sh 'date'
+                bat 'echo "Hello Jenkins"'
+                bat 'date /T'
             }
         }
     }
